@@ -1,3 +1,4 @@
 dist
 mjob.egg-info
 .gitignore
+tests
