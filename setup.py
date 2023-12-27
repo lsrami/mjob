@@ -7,7 +7,7 @@ def readme():
 
 setup(
     name='mjob',
-    version='1.0.0',
+    version='1.1.0',
     author='sirui.li',
     author_email='lisr@cslt.org',
     packages=find_packages(include=['mjob']),

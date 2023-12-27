@@ -39,8 +39,15 @@ mjob --task copy \
 --new_dir data_new \
 --nj 4
 
+# 通过给定的test.list文件，创建软连接到包含 data_new 的新目录中
+mjob --task link \
+--file_list test.list \
+--old_dir data \
+--new_dir data_new \
+--nj 4
+
 # 通过给定的test.list音频文件列表，快速音频重采样到16k，保存到到包含 data_new 的新目录中
-mjob --task copy \
+mjob --task resample \
 --file_list test.list \
 --old_dir data \
 --new_dir data_new \
